@@ -1,0 +1,25 @@
+[
+  {
+    "createdBy": "",
+    "updatedBy": "",
+    "name": "reverse_integer",
+    "description": "Task to Reverse Integer",
+    "retryCount": 3,
+    "timeoutSeconds": 1200,
+    "inputKeys": [
+      "integer"
+    ],
+    "outputKeys": [
+      "reversedInteger"
+    ],
+    "timeoutPolicy": "TIME_OUT_WF",
+    "retryLogic": "FIXED",
+    "retryDelaySeconds": 60,
+    "responseTimeoutSeconds": 600,
+    "inputTemplate": {},
+    "rateLimitPerFrequency": 0,
+    "rateLimitFrequencyInSeconds": 1,
+    "ownerEmail": "crisandolin@gmail.com",
+    "backoffScaleFactor": 1
+  }
+]

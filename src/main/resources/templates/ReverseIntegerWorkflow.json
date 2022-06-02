@@ -1,0 +1,27 @@
+{
+    "name": "reverse_integer_workflow",
+    "description": "Reverse Integer Workflow",
+    "version": 1,
+    "tasks": [
+      {
+        "name": "reverse_integer",
+        "taskReferenceName": "reverse_integer_ref_1",
+        "inputParameters": {
+          "integer": "${workflow.input.integer}"
+        },
+        "type": "SIMPLE"
+      }
+    ],
+    "inputParameters": [],
+    "outputParameters": {
+      "reversedInteger": "${reverse_integer_ref_1.output.reversedInteger}"
+    },
+    "schemaVersion": 2,
+    "restartable": true,
+    "workflowStatusListenerEnabled": false,
+    "ownerEmail": "crisandolin@gmail.com",
+    "timeoutPolicy": "ALERT_ONLY",
+    "timeoutSeconds": 0,
+    "variables": {},
+    "inputTemplate": {}
+  }
